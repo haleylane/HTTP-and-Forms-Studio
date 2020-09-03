@@ -14,7 +14,7 @@
         };
 
         let forms = document.getElementById('searchForm');
-        let chosenEngine = document.querySelector('input[name=engine]:checked');
+        let chosenEngine = document.querySelector('input[name="engine"]:checked');
         //let chosenEngine = document.querySelector('[name=engine]:checked')
         //let engineValue = chosenEngine.value;
         let action = actions[chosenEngine.value];
@@ -25,7 +25,7 @@
     window.addEventListener("load", function(){
         // TODO: register the handler
         let form = document.getElementById('searchForm');
-        form.addEventListener('submit', setSearchEngine());
+        form.addEventListener('submit', setSearchEngine);
     });
     </script>
 </head>
